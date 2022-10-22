@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-clothing Shop</title>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <link rel="stylesheet" href="./dist/productDetails.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#home" class="header__logo">
+            sh<span>i</span>rt<span>i</span>e
+        </a>
+
+        <nav class="header__nav" id="navbar">
+            <span class="fas fa-times" id="close-btn"></span>
+            <a href="index.html" class="header__nav--link">Home</a>
+            <a href="shop.html" class="header__nav--link active">shop</a>
+            <a href="blog.html" class="header__nav--link">blog</a>
+            <a href="about.html" class="header__nav--link">about</a>
+            <a href="contact.html" class="header__nav--link">contact</a>
+        </nav>
+
+        <div class="header__icons">
+            <a href="cart.html"><i class="fas fa-shopping-cart" id="cart-btn"></i></a>
+            <i class="fas fa-bars" id="menu-btn"></i>
+        </div>
+    </header>
+
+
+    <section class="productDetails">
+        <div class="productDetails__image">
+            <img src="./assets/products/f1.jpg" alt="product" id="big-image">
+            <div class="productDetails__smallImages-row">
+                <div class="productDetails__smallImages-col">
+                    <img src="./assets/products/f1.jpg" alt="product" id="small-images">
+                </div>
+                <div class="productDetails__smallImages-col">
+                    <img src="./assets/products/f2.jpg" alt="product" id="small-images">
+                </div>
+                <div class=" productDetails__smallImages-col">
+                    <img src="./assets/products/f3.jpg" alt="product" id="small-images">
+                </div>
+                <div class=" productDetails__smallImages-col">
+                    <img src="./assets/products/f4.jpg" alt="product" id="small-images">
+                </div>
+            </div>
+        </div>
+
+        <div class=" productDetails__desc">
+            <div class="productDetails__container">
+                <h6>Home/T-Shirt</h6>
+                <h4>Men's fashion t shirt</h4>
+                <h3>$120.00</h3>
+                <select name="size" id="size">
+                    <option value="select size">select size</option>
+                    <option value="xl">XL</option>
+                    <option value="XXL">XXL</option>
+                    <option value="Small">Small</option>
+                    <option value="Large">Large</option>
+                </select>
+                <div class="productDetails__addToCart-container">
+                    <input type="number" name="quantity" id="" placeholder="Qty">
+                    <button>add to cart</button>
+                </div>
+                <h4>Product details</h4>
+                <p>The Gildan Ultra Cotton T-shirt is made from a substantial a a oz
+                    per sq. yd fabric constructed from 100% cotton, this classic fit
+                    preshrunk jersey knit provises unmatched confort with each wear.
+                    Featuring a toaped neck and shoulder, and a seamless double-needle
+                    collar, and available in a range of colors, it offers it all in the
+                    ultimate head-turning package knit provises unmatched confort with each wear.
+                    Featuring a toaped neck.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FEATURED PRODUCTS -->
+
+    <section class="featuredProducts">
+        <div class="heading">
+            <h2>Featured Products</h2>
+            <p>Summer collection new modern design</p>
+        </div>
+
+        <div class="featuredProducts__container">
+            <div class="featuredProducts__product">
+                <img src="./assets/products/f1.jpg" alt="product">
+                <p>Louis Vuitton</p>
+                <h5>Cartoon Astronaut t-shirt</h5>
+                <div class="featuredProducts__product-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="featuredProducts__product-footer">
+                    <h4>$45</h4>
+                    <i class="fas fa-shopping-cart" id="cart-btn"></i>
+                </div>
+            </div>
+
+            <div class="featuredProducts__product">
+                <img src="./assets/products/f2.jpg" alt="product">
+                <p>Louis Vuitton</p>
+                <h5>Cartoon Astronaut t-shirt</h5>
+                <div class="featuredProducts__product-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="featuredProducts__product-footer">
+                    <h4>$45</h4>
+                    <i class="fas fa-shopping-cart" id="cart-btn"></i>
+                </div>
+            </div>
+
+            <div class="featuredProducts__product">
+                <img src="./assets/products/f3.jpg" alt="product">
+                <p>Louis Vuitton</p>
+                <h5>Cartoon Astronaut t-shirt</h5>
+                <div class="featuredProducts__product-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="featuredProducts__product-footer">
+                    <h4>$45</h4>
+                    <i class="fas fa-shopping-cart" id="cart-btn"></i>
+                </div>
+            </div>
+
+            <div class="featuredProducts__product">
+                <img src="./assets/products/f4.jpg" alt="product">
+                <p>Louis Vuitton</p>
+                <h5>Cartoon Astronaut t-shirt</h5>
+                <div class="featuredProducts__product-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="featuredProducts__product-footer">
+                    <h4>$45</h4>
+                    <i class="fas fa-shopping-cart" id="cart-btn"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER MARKUP -->
+
+    <div class="newsletter">
+        <div class="newsletter__text">
+            <h3>subscribe for more updates</h3>
+            <h6>get e-mail update about our latest shop and <span>special offers</span></h6>
+        </div>
+        <div class="newsletter__form">
+            <input type="text" placeholder="your email address">
+            <button class="newsletter__btn">subscribe</button>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer__address">
+            <a href="#home">
+                <img src="/assets/logo.png" alt="footer__logo">
+            </a>
+            <h3>Contact</h3>
+            <p><strong>Address: </strong>Lorem ipsum dolor sit amet consectetu.</p>
+            <p><strong>Phone: </strong>+2134353254, +1235351355</p>
+            <p><strong>Hours: </strong>1235 - 12355pm</p>
+
+            <div class="footer__socialMedia">
+                <h3>Follow us</h3>
+                <div class="footer__social-links">
+                    <a href="" class="fab fa-facebook-f"></a>
+                    <a href="" class="fab fa-twitter"></a>
+                    <a href="" class="fab fa-instagram"></a>
+                    <a href="" class="fab fa-linkedin"></a>
+                    <a href="" class="fab fa-pinterest"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__about">
+            <h3>About</h3>
+            <div class="footer__about-links">
+                <a href="#">About us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer__myAccount">
+            <h3>My Account</h3>
+            <div class="footer__myAccount-links">
+                <a href="#">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+        </div>
+        <div class="footer__app">
+            <h3>install app</h3>
+            <p>From App store or Google play</p>
+            <div class="footer__app-container">
+                <img src="./assets/pay/app.jpg" alt="apple-store">
+                <img src="./assets/pay/play.jpg" alt="googleplay-store">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <div class="footer__payment-container">
+                <img src="./assets/pay/pay.png" alt="apple-store">
+            </div>
+        </div>
+
+    </footer>
+    <div class="footer__copyright">&copy; 2022, made with 💛 love by iKeem</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+@use "../utils";
+body {
+    background: var(--greybg);
+}
+
+*{
+    font-family: utils.$font;
+    margin: 0; padding: 0;
+    outline: none; border: none;
+    text-decoration: none;
+    transition: .1s linear;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 100%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .4rem;
+}
+html::-webkit-scrollbar-track{
+    background: #fff;
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--bg);
+    border-radius: 5rem;
+}
+
+::-moz-selection {
+    color: #fff;
+    background-color: var(--main-color);
+}
+::selection {
+    color: #fff;
+    background-color: var(--main-color)
+}

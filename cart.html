@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-clothing Shop</title>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <link rel="stylesheet" href="./dist/cart.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#home" class="header__logo">
+            sh<span>i</span>rt<span>i</span>e
+        </a>
+
+        <nav class="header__nav" id="navbar">
+            <span class="fas fa-times" id="close-btn"></span>
+            <a href="index.html" class="header__nav--link">Home</a>
+            <a href="shop.html" class="header__nav--link">shop</a>
+            <a href="blog.html" class="header__nav--link">blog</a>
+            <a href="about.html" class="header__nav--link">about</a>
+            <a href="contact.html" class="header__nav--link">contact</a>
+        </nav>
+
+        <div class="header__icons">
+            <a href="cart.html"><i class="fas fa-shopping-cart active" id="cart-btn"></i></a>
+            <i class="fas fa-bars" id="menu-btn"></i>
+        </div>
+    </header>
+
+    <div class="banner">
+        <div class="banner__text">
+            <h3>#aboutUs</h3>
+            <p>Save more with coupons & up to 70% off!</p>
+        </div>
+    </div>
+
+
+    <!-- TABLE SECTION MARKUP -->
+
+    <section class="table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Remove</th>
+                    <th>Image</th>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><i class="fas fa-times" id="close-btn"></i></td>
+                    <td><img src="./assets/products/f1.jpg" alt="product"></td>
+                    <td>Cartoon Astronaut T-shirt</td>
+                    <td>$118.19</td>
+                    <td><input type="number" name="" id=""></td>
+                    <td>$118.19</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td><i class="fas fa-times" id="close-btn"></i></td>
+                    <td><img src="./assets/products/f2.jpg" alt="product"></td>
+                    <td>Cartoon Astronaut T-shirt</td>
+                    <td>$118.19</td>
+                    <td><input type="number" name="" id=""></td>
+                    <td>$118.19</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td><i class="fas fa-times" id="close-btn"></i></td>
+                    <td><img src="./assets/products/f3.jpg" alt="product"></td>
+                    <td>Cartoon Astronaut T-shirt</td>
+                    <td>$118.19</td>
+                    <td><input type="number" name="" id=""></td>
+                    <td>$118.19</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+    <!-- CART TOTAL SECTION -->
+
+    <section class="checkout">
+        <div class="checkout__coupon">
+            <h3>apply coupon</h3>
+            <div>
+                <input type="text" name="coupon" id="">
+                <button class="checkout__coupon-btn">apply</button>
+            </div>
+        </div>
+        <div class="checkout__cartTotal">
+            <table>
+                <caption>Cart Total</caption>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>$335.23</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <th>Total</th>
+                    <th>$335.23</th>
+                </tr>
+            </table>
+            <button class="checkout__btn">proceed to checkout</button>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER MARKUP -->
+
+    <div class="newsletter">
+        <div class="newsletter__text">
+            <h3>subscribe for more updates</h3>
+            <h6>get e-mail update about our latest shop and <span>special offers</span></h6>
+        </div>
+        <div class="newsletter__form">
+            <input type="text" placeholder="your email address">
+            <button class="newsletter__btn">subscribe</button>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer__address">
+            <a href="#home">
+                <img src="/assets/logo.png" alt="footer__logo">
+            </a>
+            <h3>Contact</h3>
+            <p><strong>Address: </strong>Lorem ipsum dolor sit amet consectetu.</p>
+            <p><strong>Phone: </strong>+2134353254, +1235351355</p>
+            <p><strong>Hours: </strong>1235 - 12355pm</p>
+
+            <div class="footer__socialMedia">
+                <h3>Follow us</h3>
+                <div class="footer__social-links">
+                    <a href="" class="fab fa-facebook-f"></a>
+                    <a href="" class="fab fa-twitter"></a>
+                    <a href="" class="fab fa-instagram"></a>
+                    <a href="" class="fab fa-linkedin"></a>
+                    <a href="" class="fab fa-pinterest"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__about">
+            <h3>About</h3>
+            <div class="footer__about-links">
+                <a href="#">About us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer__myAccount">
+            <h3>My Account</h3>
+            <div class="footer__myAccount-links">
+                <a href="#">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+        </div>
+        <div class="footer__app">
+            <h3>install app</h3>
+            <p>From App store or Google play</p>
+            <div class="footer__app-container">
+                <img src="./assets/pay/app.jpg" alt="apple-store">
+                <img src="./assets/pay/play.jpg" alt="googleplay-store">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <div class="footer__payment-container">
+                <img src="./assets/pay/pay.png" alt="apple-store">
+            </div>
+        </div>
+
+    </footer>
+    <div class="footer__copyright">&copy; 2022, made with 💛 love by iKeem</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+@use "./utils/" as u;
+
+// ---------RESPONSIVE DESIGN MAP FOR THE BREAKPOINTS-------------------//
+//map-get() takes two arguments which are the name of the map and the key needed. 
+
+// 700px, 900px, 1440px
+$breakpoints-up : (
+    "medium": u.em(700),
+    "large": u.em(900),
+    "xlarge": u.em(1440)
+);
+
+
+// 699.98px, 899.98px, 1439.98px
+$breakpoints-down : (
+    "xsmall": u.rem(499.48),
+    "small": u.em(699.98),
+    "medium": u.em(899.98),
+    "large": u.em(1439.98)
+);
+
+
+// -----------BREAKPOINT FOR BIGGER DEVICES----------------//
+@mixin breakpoint-up($size) {
+    @media (min-width: map-get($breakpoints-up, $size)) {
+        @content;
+    }
+}
+
+//-----BREAKPOINT FOR SMALLER DEVICES---------
+@mixin breakpoint-down($size) {
+    @media (max-width: map-get($breakpoints-down, $size)) {
+        @content;
+    }
+}
+
+// MEDIA QUERY FOR LANDSCAPE DEVICES
+@mixin breakpoint-landscape() {
+    @media (max-width: 1200px) and
+    (min-height: 1000px) {
+        @content;
+    }
+}
+
+
+// ------------FLEX MIXIN---------/
+@mixin flexCenter($direction: row) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+    flex-wrap: wrap;
+}
+
+
+@mixin transition-ease ($default: all){
+    transition: $default 0.3s ease-in-out;
+}
+
+// --------button----------
+@mixin btn {
+    padding: 0.5rem u.rem(12);
+    background-color: var(--main-color);
+    outline: none;
+    border: none;
+    color: #fff;
+    letter-spacing: 2px;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight: 300;
+
+    &:hover {
+        background-color: var(--btn-hover);
+        color: var(--black);
+    }
+}
+
+@mixin input {
+    outline: none;
+    background: none;
+    padding: 1rem;
+    border-radius: u.rem(5);
+    
+}
+
+@mixin grid($column: 1fr) {
+    display: grid;
+    grid-template-columns: $column;
+}
+
+@mixin heading() {
+    text-align: center;
+    letter-spacing: u.rem(1);
+    margin-bottom: u.rem(25);
+    text-transform: capitalize;
+
+    p {
+        font-style: oblique;
+
+    }
+}
+

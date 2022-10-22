@@ -1,0 +1,13 @@
+-------
+When you use the "@use", it's similar to importing modules in JS, so it can be imports like these below,
+1. @use "utils" as u; to rename the utils to "u" and use it as, e.g u.$font
+2. @use "utils" as *; to select all the variables in the utils folder and use their names directly, e.g $font
+3. However, the convention I used is the best as it aids debugging. if ever, there was an error.
+-------
+Instead of setting "grid-auto-rows" seperately, and setting the value(height) for each row,
+I used "grid-template" so that I can add the row(height) in one css styling
+-------
+The "grid-auto-rows" is used when an additional row is to be specified with no defined value, then "auto" will be used as the default value.
+------///////-----------
+setting width/height for an element that has display: flex/grid will give poor width/height
+-----///////-------------

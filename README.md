@@ -1,7 +1,7 @@
 # E-Commerce Website 🛍️  
 *A responsive e-commerce store built with HTML, SCSS (BEM), and vanilla JavaScript.*  
 
-**Live Demo**: [View Here](https://keematics-ecommerce.netlify.app/) | **Portfolio**: [Case Study on MySite.com](https://www.keematics.com)  
+**Live Demo**: [View Here](https://keematics-ecommerce.netlify.app/) | **Portfolio**: [Case Study On My Portfolio](https://www.keematics.com/projects)  
 ![Desktop Preview](https://res.cloudinary.com/druqzyg13/image/upload/v1761056247/my_new_portfolio/Project/shirtie/Screenshot_7_fede9j.png)  
 
 ## ✨ Features  
